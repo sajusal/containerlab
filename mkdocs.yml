@@ -9,34 +9,44 @@ nav:
       - Nodes: manual/nodes.md
       - Kinds:
           - manual/kinds/index.md
-          - Nokia SR Linux: manual/kinds/srl.md
-          - Nokia SR OS: manual/kinds/vr-sros.md
-          - Arista cEOS: manual/kinds/ceos.md
-          - Arista vEOS: manual/kinds/vr-veos.md
-          - Juniper cRPD: manual/kinds/crpd.md
-          - Juniper vMX: manual/kinds/vr-vmx.md
-          - Juniper vQFX: manual/kinds/vr-vqfx.md
-          - Juniper vSRX: manual/kinds/vr-vsrx.md
-          - Juniper vJunos-router: manual/kinds/vr-vjunosrouter.md
-          - Juniper vJunos-switch: manual/kinds/vr-vjunosswitch.md
-          - Juniper vJunosEvolved: manual/kinds/vr-vjunosevolved.md
-          - Cisco XRd: manual/kinds/xrd.md
-          - Cisco XRv9k: manual/kinds/vr-xrv9k.md
-          - Cisco XRv: manual/kinds/vr-xrv.md
-          - Cisco CSR1000v: manual/kinds/vr-csr.md
-          - Cisco Nexus 9000v: manual/kinds/vr-n9kv.md
-          - Cisco 8000: manual/kinds/c8000.md
-          - Cisco c8000v: manual/kinds/vr-c8000v.md
-          - Cisco FTDv: manual/kinds/vr-ftdv.md
+          - Nokia:
+              - Nokia SR Linux: manual/kinds/srl.md
+              - Nokia SR OS: manual/kinds/vr-sros.md
+          - Arista:
+              - Arista cEOS: manual/kinds/ceos.md
+              - Arista vEOS: manual/kinds/vr-veos.md
+          - Cisco:
+              - Cisco XRd: manual/kinds/xrd.md
+              - Cisco XRv9k: manual/kinds/vr-xrv9k.md
+              - Cisco XRv: manual/kinds/vr-xrv.md
+              - Cisco CSR1000v: manual/kinds/vr-csr.md
+              - Cisco Nexus 9000v: manual/kinds/vr-n9kv.md
+              - Cisco 8000: manual/kinds/c8000.md
+              - Cisco c8000v: manual/kinds/vr-c8000v.md
+              - Cisco Catalyst 9000v: manual/kinds/vr-cat9kv.md
+              - Cisco FTDv: manual/kinds/vr-ftdv.md
+          - Juniper:
+              - Juniper cRPD: manual/kinds/crpd.md
+              - Juniper vMX: manual/kinds/vr-vmx.md
+              - Juniper vQFX: manual/kinds/vr-vqfx.md
+              - Juniper vSRX: manual/kinds/vr-vsrx.md
+              - Juniper vJunos-router: manual/kinds/vr-vjunosrouter.md
+              - Juniper vJunos-switch: manual/kinds/vr-vjunosswitch.md
+              - Juniper vJunosEvolved: manual/kinds/vr-vjunosevolved.md
           - Cumulus VX: manual/kinds/cvx.md
           - Aruba AOS-CX: manual/kinds/vr-aoscx.md
-          - SONiC: manual/kinds/sonic-vs.md
-          - Dell FTOS10v: manual/kinds/vr-ftosv.md
+          - SONiC:
+              - Container: manual/kinds/sonic-vs.md
+              - VM: manual/kinds/sonic-vm.md
+          - Dell:
+              - FTOS10v: manual/kinds/vr-ftosv.md
+              - Enterprise SONiC: manual/kinds/dell_sonic.md
           - MikroTik RouterOS: manual/kinds/vr-ros.md
           - IPInfusion OcNOS: manual/kinds/ipinfusion-ocnos.md
           - OpenBSD: manual/kinds/openbsd.md
           - FreeBSD: manual/kinds/freebsd.md
           - Keysight IXIA-C One: manual/kinds/keysight_ixia-c-one.md
+          - Ostinato: manual/kinds/ostinato.md
           - Check Point Cloudguard: manual/kinds/checkpoint_cloudguard.md
           - Fortinet Fortigate: manual/kinds/fortinet_fortigate.md
           - Palo Alto PAN: manual/kinds/vr-pan.md
@@ -64,8 +74,10 @@ nav:
       - Inventory: manual/inventory.md
       - Image management: manual/images.md
       - Labs and Codespaces: manual/codespaces.md
+      - Link Impairments: manual/impairments.md
       - Developers guide:
           - manual/dev/index.md
+          - Documentation: manual/dev/doc.md
           - Testing: manual/dev/test.md
   - Command reference:
       - deploy: cmd/deploy.md
@@ -115,6 +127,7 @@ nav:
       - Cumulus Linux (docker runtime) and Host: lab-examples/cvx02.md
       - BGP VPLS between Nokia and Juniper: lab-examples/bgp-vpls-nok-jun.md
       - Keysight IXIA-C and Nokia SR Linux: lab-examples/ixiacone-srl.md
+      - Ostinato and Nokia SR Linux: lab-examples/ost-srl.md
       - Multi-node labs: lab-examples/multinode.md
       - RARE/freeRtr: lab-examples/rare-freertr.md
       - Juniper vSRX: lab-examples/vsrx01.md
@@ -125,6 +138,7 @@ nav:
           - 5-stage Clos topology: lab-examples/templated02.md
       - Generic VM: lab-examples/generic_vm01.md
   - Release notes:
+      - "0.56": rn/0.56.md
       - "0.55": rn/0.55.md
       - "0.54": rn/0.54.md
       - "0.53": rn/0.53.md
@@ -247,8 +261,13 @@ plugins:
       redirect_maps:
         lab-examples/tls-cert.md: https://clabs.netdevops.me/security/gnmitls/
         lab-examples/ixp-lab.md: lab-examples/peering-lab.md
-  - typeset
+#- typeset
   - glightbox
+  - macros:
+      j2_block_start_string: "[[[%"
+      j2_block_end_string: "%]]]"
+      j2_variable_start_string: "[[["
+      j2_variable_end_string: "]]]"
 
 # Customization
 extra:

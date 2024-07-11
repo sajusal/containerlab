@@ -17,7 +17,7 @@ topology:
   nodes:
     node1:
       kind: nokia_srlinux              # node1 is of srl kind
-      type: ixrd2
+      type: ixrd2l
       image: ghcr.io/nokia/srlinux
     node2:
       kind: ceos             # node2 is of ceos kind
@@ -44,12 +44,13 @@ Within each predefined kind, we store the necessary information that is used to 
 | **Juniper vJunos-router**  | [`vr-vjunosrouter/juniper_vjunosrouter`](vr-vjunosrouter.md)    | supported |    VM     |
 | **Juniper vJunos-switch**  | [`vr-vjunosswitch/juniper_vjunosswitch`](vr-vjunosswitch.md)    | supported |    VM     |
 | **Juniper vJunosEvolved**  | [`vr-vjunosevolved/juniper_vjunosevolved`](vr-vjunosevolved.md) | supported |    VM     |
-| **Cisco XRd**              | [`xrd/cisco_xrd'](xrd.md)                                       | supported | container |
+| **Cisco XRd**              | [`xrd/cisco_xrd`](xrd.md)                                       | supported | container |
 | **Cisco XRv9k**            | [`vr-xrv9k/vr-cisco_xrv9k`](vr-xrv9k.md)                        | supported |    VM     |
 | **Cisco XRv**              | [`vr-xrv/vr-cisco_xrv`](vr-xrv.md)                              | supported |    VM     |
 | **Cisco CSR1000v**         | [`vr-csr/vr-cisco_csr1000v`](vr-csr.md)                         | supported |    VM     |
 | **Cisco Nexus 9000v**      | [`vr-n9kv/vr-cisco_n9kv`](vr-n9kv.md)                           | supported |    VM     |
 | **Cisco 8000**             | [`c8000/cisco_c8000`](c8000.md)                                 | supported |    VM+    |
+| **Cisco Catalyst 9000v**   | [`cat9kv/vr-cisco_cat9kv`](vr-cat9kv.md)                        | supported |    VM     |
 | **Cisco FTDv**             | [`cisco_ftdv`](vr-ftdv.md)                                      | supported |    VM     |
 | **Cumulus VX**             | [`cvx/cumulus_cvx`](cvx.md)                                     | supported | container |
 | **Aruba ArubaOS-CX**       | [`vr-aoscx/vr-aruba_aoscx`](vr-aoscx.md)                        | supported |    VM     |
@@ -59,6 +60,7 @@ Within each predefined kind, we store the necessary information that is used to 
 | **IPInfusion OcNOS**       | [`ipinfusion_ocnos`](ipinfusion-ocnos.md)                       | supported |    VM     |
 | **OpenBSD**                | [`openbsd`](openbsd.md)                                         | supported |    VM     |
 | **Keysight ixia-c-one**    | [`keysight_ixia-c-one`](keysight_ixia-c-one.md)                 | supported | container |
+| **Ostinato**               | [`linux`](ostinato.md)                                          | supported | container |
 | **Check Point Cloudguard** | [`checkpoint_cloudguard`](checkpoint_cloudguard.md)             | supported |    VM     |
 | **Fortinet Fortigate**     | [`fortinet_fortigate`](fortinet_fortigate.md)                   | supported |    VM     |
 | **Palo Alto PAN**          | [`vr-panos/vr-paloalto_panos`](vr-pan.md)                       | supported |    VM     |

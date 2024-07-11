@@ -24,11 +24,12 @@ Containerlab focuses on the containerized Network Operating Systems which are ty
 * [Nokia SR Linux](manual/kinds/srl.md)
 * [Arista cEOS](manual/kinds/ceos.md)
 * [Cisco XRd](manual/kinds/xrd.md)
-* [Azure SONiC](manual/kinds/sonic-vs.md)
+* [SONiC](manual/kinds/sonic-vs.md)
 * [Juniper cRPD](manual/kinds/crpd.md)
 * [Cumulus VX](manual/kinds/cvx.md)
 * [Keysight IXIA-C](manual/kinds/keysight_ixia-c-one.md)
 * [RARE/freeRtr](manual/kinds/rare-freertr.md)
+* [Ostinato](manual/kinds/ostinato.md)
 
 In addition to native containerized NOSes, containerlab can launch traditional virtual machine based routers using [vrnetlab or boxen integration](manual/vrnetlab.md):
 
@@ -40,6 +41,7 @@ In addition to native containerized NOSes, containerlab can launch traditional v
 * [Juniper vJunos-switch](manual/kinds/vr-vjunosswitch.md)
 * [Juniper vJunos Evolved](manual/kinds/vr-vjunosevolved.md)
 * [Cisco IOS XRv9k](manual/kinds/vr-xrv9k.md)
+* [Cisco Catalyst 9000v](manual/kinds/vr-cat9kv.md)
 * [Cisco Nexus 9000v](manual/kinds/vr-n9kv.md)
 * [Cisco c8000v](manual/kinds/vr-c8000v.md)
 * [Cisco CSR 1000v](manual/kinds/vr-csr.md)
@@ -53,6 +55,7 @@ In addition to native containerized NOSes, containerlab can launch traditional v
 * [Aruba AOS-CX](manual/kinds/vr-aoscx.md)
 * [OpenBSD](manual/kinds/openbsd.md)
 * [FreeBSD](manual/kinds/freebsd.md)
+* [SONiC](manual/kinds/sonic-vm.md)
 
 And, of course, containerlab is perfectly capable of wiring up arbitrary linux containers which can host your network applications, virtual functions or simply be a test client. With all that, containerlab provides a single IaaC interface to manage labs which can span all the needed variants of nodes:
 
